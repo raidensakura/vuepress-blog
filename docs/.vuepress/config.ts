@@ -101,7 +101,7 @@ export default defineUserConfig({
         mask: "rgb(251, 170, 152, .2)"
       },
       {
-        path: "/img/home-bg/3.jpg",
+        path: "/img/home-bg/3.png",
         mask: "rgba(68, 74, 83, .1)"
       },
       {
