@@ -6,6 +6,7 @@ import { gungnirTheme, i18n } from "vuepress-theme-gungnir";
 import { navbar, sidebar } from "./configs";
 
 const isProd = process.env.NODE_ENV === "production";
+const searchApiKey: string = process.env.SEARCH_API_KEY!;
 
 export default defineUserConfig({
   base: "/",
@@ -71,21 +72,21 @@ export default defineUserConfig({
 
     // personal information
     personalInfo: {
-      name: "Gungnir",
+      name: "Raiden Sakura",
       avatar: "/img/avatar.jpeg",
-      description: "A blog theme for VuePress",
+      description: "🍵 Raiden's personal blog",
       sns: {
-        github: "Renovamen",
-        linkedin: "xiaohan-zou-55bba0160",
-        facebook: "renovamen.zou",
-        twitter: "renovamen_zxh",
-        zhihu: "chao-neng-gui-su",
-        email: "renovamenzxh@gmail.com",
+        github: "raidensakura",
+        // linkedin: "#",
+        // facebook: "#",
+        twitter: "raidensakura",
+        // zhihu: "#",
+        email: "raiden@project-mei.xyz",
         rss: "/rss.xml",
         // customized sns
         bilibili: {
-          icon: "ri-bilibili-line",
-          link: "https://www.bilibili.com/"
+          icon: "ri-youtube-fill",
+          link: "https://youtube.com/@raidensakura"
         }
       }
     },
@@ -98,7 +99,7 @@ export default defineUserConfig({
       },
       {
         path: "/img/home-bg/2.jpg",
-        mask: "rgb(251, 170, 152, .2)"
+        mask: "rgb(230, 152, 249, .2)"
       },
       {
         path: "/img/home-bg/3.png",
@@ -113,7 +114,8 @@ export default defineUserConfig({
     // other pages
     pages: {
       tags: {
-        subtitle: "Black Sheep Wall",
+        subtitle:
+          "Never accept the world as it appears to be. Always dare to see it for what it could be",
         bgImage: {
           path: "/img/pages/tags.jpg",
           mask: "rgba(211, 136, 37, .5)"
@@ -163,11 +165,12 @@ export default defineUserConfig({
       mermaid: true,
       chartjs: true,
       giscus: {
-        repo: "This-is-an-Apple/gitalk-comments",
-        repoId: "MDEwOlJlcG9zaXRvcnkyMTA1MjQyMTQ=",
-        category: "Announcements",
-        categoryId: "DIC_kwDODIxYNs4CAO1u",
-        lazyLoad: true
+        repo: "raidensakura/vuepress-blog",
+        repoId: "R_kgDOJmfS3A",
+        category: "General",
+        categoryId: "DIC_kwDOJmfS3M4CWr_Z",
+        lazyLoad: true,
+        theme: "dark"
       },
       mdPlus: {
         all: true
@@ -175,15 +178,15 @@ export default defineUserConfig({
       ga: "G-EE8M2S3MPB",
       ba: "10b7bc420625758a319d6b23aed4700f",
       rss: {
-        siteURL: "https://v2.vuepress-theme-gungnir.vercel.app",
-        copyright: "Renovamen 2018-2022"
+        siteURL: "https://blog.project-mei.xyz",
+        copyright: "Raiden 2023"
       },
       pwa: true,
       search: false // use @vuepress/plugin-docsearch instead
     },
 
     footer: `
-      &copy; <a href="https://github.com/Renovamen" target="_blank">Renovamen</a> 2018-2022
+      &copy; <a href="https://github.com/raidensakura" target="_blank">Raiden Sakura</a> 2023
       <br>
       Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank">VuePress</a> &
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
@@ -198,9 +201,9 @@ export default defineUserConfig({
 
   plugins: [
     docsearchPlugin({
-      appId: "3DDLGP0IG4",
-      apiKey: "6556adaa82b31485309b440a525f264a",
-      indexName: "v2-vuepress-theme-gungnir",
+      appId: "AANTZOHJW5",
+      apiKey: searchApiKey,
+      indexName: "project-mei",
       locales: {
         "/zh/": {
           placeholder: "搜索文档",
