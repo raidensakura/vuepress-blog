@@ -2,14 +2,18 @@
 layout: Links
 title: Links
 links:
-  - title: Live Demos
+  - title: My organisations
     items:
-      - sitename: ME?
-        url: https://blog.zxh.io
+      - sitename: Project MEI
+        url: https://project-mei.xyz
         img: /img/links/me.png
-        desc: My blog
+        desc: My project website
+      - sitename: Modmail
+        url: https://github.com/modmail-dev/modmail
+        img: /img/links/modmail.png
+        desc: Discord Modmail bot
         
-  - title: Other Versions
+  - title: Other version of blog theme
     items:
       - sitename: VuePress 1
         url: https://vuepress-theme-gungnir.vercel.app

@@ -49,12 +49,12 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "VuePress Theme Gungnir",
-      description: "A blog theme for VuePress"
+      title: "Raiden's Blog",
+      description: "Using VuePress Gungnir Theme"
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "VuePress Theme Gungnir",
+      title: "Raiden's 博客",
       description: "VuePress 博客主题"
     }
   },
@@ -114,8 +114,7 @@ export default defineUserConfig({
     // other pages
     pages: {
       tags: {
-        subtitle:
-          "Never accept the world as it appears to be. Always dare to see it for what it could be",
+        subtitle: "Every journey has its final day. Don’t rush",
         bgImage: {
           path: "/img/pages/tags.jpg",
           mask: "rgba(211, 136, 37, .2)"
@@ -123,7 +122,7 @@ export default defineUserConfig({
       },
       links: {
         subtitle:
-          "When you are looking at the stars, please put the brightest star shining night sky as my soul.",
+          "Never accept the world as it appears to be. Always dare to see it for what it could be.",
         bgImage: {
           path: "/img/pages/links.jpg",
           mask: "rgba(64, 118, 190, 0.5)"
