@@ -1,12 +1,12 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { webpackBundler } from "@vuepress/bundler-webpack";
-import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+// import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { defineUserConfig } from "vuepress";
 import { gungnirTheme, i18n } from "vuepress-theme-gungnir";
 import { navbar, sidebar } from "./configs";
 
 const isProd = process.env.NODE_ENV === "production";
-const searchApiKey: string = process.env.SEARCH_API_KEY!;
+// const searchApiKey: string = process.env.SEARCH_API_KEY!;
 
 export default defineUserConfig({
   base: "/",
@@ -65,10 +65,10 @@ export default defineUserConfig({
 
   // configure default theme
   theme: gungnirTheme({
-    repo: "Renovamen/vuepress-theme-gungnir",
+    repo: "raidensakura/vuepress-blog",
     docsDir: "docs",
 
-    hitokoto: "https://v1.hitokoto.cn?c=i", // enable hitokoto (一言) or not?
+    // hitokoto: "https://v1.hitokoto.cn?c=i", // enable hitokoto (一言) or not?
 
     // personal information
     personalInfo: {
@@ -118,7 +118,7 @@ export default defineUserConfig({
           "Never accept the world as it appears to be. Always dare to see it for what it could be",
         bgImage: {
           path: "/img/pages/tags.jpg",
-          mask: "rgba(211, 136, 37, .5)"
+          mask: "rgba(211, 136, 37, .2)"
         }
       },
       links: {
@@ -175,14 +175,14 @@ export default defineUserConfig({
       mdPlus: {
         all: true
       },
-      ga: "G-EE8M2S3MPB",
-      ba: "10b7bc420625758a319d6b23aed4700f",
+      // ga: "G-EE8M2S3MPB",
+      // ba: "10b7bc420625758a319d6b23aed4700f",
       rss: {
         siteURL: "https://blog.project-mei.xyz",
         copyright: "Raiden 2023"
       },
-      pwa: true,
-      search: false // use @vuepress/plugin-docsearch instead
+      pwa: true
+      // search: true // use @vuepress/plugin-docsearch instead
     },
 
     footer: `
@@ -200,7 +200,7 @@ export default defineUserConfig({
   },
 
   plugins: [
-    docsearchPlugin({
+    /** docsearchPlugin({
       appId: "AANTZOHJW5",
       apiKey: searchApiKey,
       indexName: "project-mei",
@@ -247,6 +247,6 @@ export default defineUserConfig({
           }
         }
       }
-    })
+    })**/
   ]
 });
