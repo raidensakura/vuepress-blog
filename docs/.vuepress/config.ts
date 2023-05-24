@@ -1,12 +1,12 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { webpackBundler } from "@vuepress/bundler-webpack";
-// import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { defineUserConfig } from "vuepress";
 import { gungnirTheme, i18n } from "vuepress-theme-gungnir";
 import { navbar, sidebar } from "./configs";
 
 const isProd = process.env.NODE_ENV === "production";
-// const searchApiKey: string = process.env.SEARCH_API_KEY!;
+const searchApiKey: string = process.env.SEARCH_API_KEY!;
 
 export default defineUserConfig({
   base: "/",
@@ -180,8 +180,8 @@ export default defineUserConfig({
         siteURL: "https://blog.project-mei.xyz",
         copyright: "Raiden 2023"
       },
-      pwa: true
-      // search: true // use @vuepress/plugin-docsearch instead
+      pwa: true,
+      search: false // use @vuepress/plugin-docsearch instead
     },
 
     footer: `
@@ -199,8 +199,8 @@ export default defineUserConfig({
   },
 
   plugins: [
-    /** docsearchPlugin({
-      appId: "AANTZOHJW5",
+    docsearchPlugin({
+      appId: "673555D6U3",
       apiKey: searchApiKey,
       indexName: "project-mei",
       locales: {
@@ -246,6 +246,6 @@ export default defineUserConfig({
           }
         }
       }
-    })**/
+    })
   ]
 });
