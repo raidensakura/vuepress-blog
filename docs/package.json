@@ -12,7 +12,6 @@
     "@vuepress/bundler-webpack": "2.0.0-beta.49",
     "@vuepress/cli": "2.0.0-beta.49",
     "@vuepress/client": "2.0.0-beta.49",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.49",
     "oh-vue-icons": "^1.0.0-rc3",
     "sass-loader": "^13.0.0",
     "serve": "^13.0.2",
