@@ -79,9 +79,9 @@ If you wanna check the console logs, you can view them by the auto-generated con
 
 ## But what about logviewer?
 
-I recommend using my logviewer plugin due to significantly less hassle on setting it up. Find out how to install it [here](https://github.com/raidensakura/modmail-plugins).
+I recommend using my logviewer plugin since it's significantly easier to set up. Find out how to install it [here](https://github.com/raidensakura/modmail-plugins).
 
-After you have it installed, simply copy these settings in the network tab and restart your Modmail service for the changes to apply. You can also link a custom domain if you own one and know how to link it. Make sure to also add `PORT` variable in your environment with `80` as the value. This will make logviewer listen on the default HTTP port which is recommended.
+After you have it installed, simply copy these settings in the network tab and restart your Modmail service for the changes to apply. You can also link a custom domain if you own one and know how to link it.
 
 ![Image Example](/img/in-post/2023-08-02/networking.png)
 
